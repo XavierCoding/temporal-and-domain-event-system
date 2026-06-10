@@ -1,0 +1,20 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "mock-sv": "tsx mock-sv.ts",
+    "call-action": "tsx call-action-server.ts",
+    "test": "tsx test-signal.ts"
+  },
+  "dependencies": {
+    "@temporalio/client": "^1.11.0",
+    "amqplib": "^0.10.4",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "tsx": "^4.15.6",
+    "typescript": "^5.4.5"
+  }
+}

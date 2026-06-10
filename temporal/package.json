@@ -1,0 +1,28 @@
+{
+  "name": "temporal-journey-worker",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/worker.ts",
+    "start": "node dist/worker.js",
+    "seed": "npx tsx seed-config.ts"
+  },
+  "dependencies": {
+    "@temporalio/activity": "^1.11.0",
+    "@temporalio/client": "^1.11.0",
+    "@temporalio/worker": "^1.11.0",
+    "@temporalio/workflow": "^1.11.0",
+    "dotenv": "^16.4.5",
+    "pg": "^8.12.0",
+    "pino": "^9.2.0",
+    "pino-pretty": "^11.2.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "@types/pg": "^8.11.6",
+    "tsx": "^4.15.6",
+    "typescript": "^5.4.5"
+  }
+}
